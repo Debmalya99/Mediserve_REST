@@ -9,7 +9,7 @@ This is a REST API implementation of Mediserve project, which I did a few months
 
 #### Tha basic format of the API url : (I'll try adding more documentation later.)
 * /api/mediserve/v1/[symptom]
-where <symptom> is a long list of symptoms in json format given as:
+where [symptom] is a long list of symptoms in json format given as:
 {"symptom":[list of symptoms, which is 18 all times]} 
 
 Of course not all the time all symptoms are needed, so default values will mostly be set to 'not_needed'. A detailed list will be provided later.
