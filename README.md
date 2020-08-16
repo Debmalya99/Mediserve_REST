@@ -8,7 +8,7 @@ For more information check out the Mediserve Repository:
 This is a REST API implementation of Mediserve project, which I did a few months ago as a part of Techno India Future proof hackathon. The main intention behind this rest API is to extend its functionality to other form of front ends like websites and apps.
 
 #### Tha basic format of the API url : (I'll try adding more documentation later.)
-* /api/mediserve/v1/<symptom>'
+* /api/mediserve/v1/[symptom]'
 where <symptom> is a long list of symptoms in json format given as:
 {"symptom":[list of symptoms, which is 18 all times]} 
 
