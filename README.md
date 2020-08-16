@@ -1,27 +1,15 @@
-# Project Mediserve
+# Project Mediserve REST API
 
 #### Smart disease predictions based on your symptoms
 
-### Link to video explanation:
-[Guide to mediserve](https://www.youtube.com/watch?v=6Mk6jCeBqFA&t=3s)
+For more information check out the Mediserve Repository:
+[Link to Mediserve repository](https://github.com/Debmalya99/Mediserve)
 
-Plus some bonus features:
-* Gives you some common precautions that you can take before visiting the doctor
-* Predicts the severity of the disease based on your symptoms
-* Can contact hospitals by sharing your information via e-mail.
+This is a REST API implementation of Mediserve project, which I did a few months ago as a part of Techno India Future proof hackathon. The main intention behind this rest API is to extend its functionality to other form of front ends like websites and apps.
 
-#### Tools and libraries used:
+#### Tha basic format of the API url : (I'll try adding more documentation later.)
+* /api/mediserve/v1/<symptom>'
+where <symptom> is a long list of symptoms in json format given as:
+{"symptom":[list of symptoms, which is 18 all times]} 
 
-* Anaconda Python 3.7
-    * Scikit-learn used for Machine Learning part
-    * Flask used for making the web front end
-    * Pickle library for saving the models after training for re-use
-* The webpage was made using basic HTML and some Bootstrap
-
-#### Datasets : The datasets do not belong to us, we obtained it from :
-
-[Link to the dataset](https://www.kaggle.com/itachi9604/disease-symptom-description-dataset)
-
-#### Note : We built this project as a part of the Techno India Future Proof Hackathon under the name team Machine Learners. 
-
-This project was built as a team. Unfortunately, my teammates are not on GitHub.
+Of course not all the time all symptoms are needed, so default values will mostly be set to 'not_needed'. A detailed list will be provided later.
